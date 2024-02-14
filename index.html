@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22256%22 height=%22256%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2250%22 fill=%22%230058ff%22></rect><path fill=%22%23fff%22 d=%22M72.15 21.33L72.15 21.33Q74.49 22.50 74.90 25.02Q75.30 27.54 73.59 29.61L73.59 29.61Q72.42 31.23 70.58 31.41Q68.73 31.59 66.84 30.69L66.84 30.69Q64.68 29.70 62.30 29.16Q59.91 28.62 57.30 28.62L57.30 28.62Q52.44 28.62 48.62 30.15Q44.79 31.68 42.09 34.52Q39.39 37.35 38.00 41.22Q36.60 45.09 36.60 49.77L36.60 49.77Q36.60 55.26 38.18 59.31Q39.75 63.36 42.54 66.06Q45.33 68.76 49.11 70.07Q52.89 71.37 57.30 71.37L57.30 71.37Q59.73 71.37 62.16 70.92Q64.59 70.47 66.84 69.30L66.84 69.30Q68.73 68.40 70.58 68.67Q72.42 68.94 73.68 70.56L73.68 70.56Q75.48 72.81 74.99 75.20Q74.49 77.58 72.24 78.66L72.24 78.66Q69.90 79.83 67.43 80.60Q64.95 81.36 62.43 81.77Q59.91 82.17 57.30 82.17L57.30 82.17Q50.82 82.17 45.02 80.10Q39.21 78.03 34.67 73.98Q30.12 69.93 27.51 63.86Q24.90 57.78 24.90 49.77L24.90 49.77Q24.90 42.84 27.29 36.99Q29.67 31.14 34.04 26.87Q38.40 22.59 44.34 20.21Q50.28 17.82 57.30 17.82L57.30 17.82Q61.26 17.82 65.04 18.72Q68.82 19.62 72.15 21.33Z%22></path></svg>" />
+<meta charset="UTF-8">
+<meta http-equiv=“Pragma” content=”no-cache”>
+<meta http-equiv=“Expires” content=”-1″>
+<meta http-equiv=“CACHE-CONTROL” content=”NO-CACHE”>
+<!-- CSS Stylesheets -->
+<link rel="stylesheet" href="./css/poetry.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<link rel="stylesheet" href="css/master.css">
+<link rel="stylesheet" href="./css/master2.css">
+<link rel="stylesheet" href="./css/bootstrap.min.css">
+<title>Portfolio Project</title>
+</head>
+
+<body>
+ <img src="./images/banner.jpg" alt=" banner" class="hero">
+   <h1 class="section-heading">Portfolio Project</h1>
+   <p class="page-title">Software Developer</p>
+   <div class="bio-block">
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+       Magnam ullam harum repellendus repudiandae similique dolor facere expedita ab,
+        odio exercitationem officia, numquam minima asperiores corporis aliquam tenetur placeat ex sed.</p>
+</div>
+<hr>
+<p class="section-heading">Portfolio</p>
+<div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+  <div class="col bm-2">
+    <div class="card h-100">
+      <img src="./images/eurorbit_screenshot.jpg" class="card-img-top" alt="EurOrbit">
+      <div class="card-body">
+        <h5 class="card-title">EurOrbit</h5>
+        <p class="card-text">Weather Forecast written in JavaScript</p>
+        <a href="https://skyroute66.com/eurorbit/" target="_blank" class="btn btn-primary">Try It Out</a>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="col bm-2">
+  <div class="card h-100">
+    <img src="./images/illustrator_artwork.jpg" class="card-img-top" alt="Illustrator Artwork">
+    <div class="card-body">
+      <h5 class="card-title">Illustrator Vector Art</h5>
+      <p class="card-text">Traced from Paper and Colored</p>
+      <a href="https://skyroute66.com/sampleportfolio/images/illustrator_artwork_full.jpg" target="_blank" class="btn btn-primary">Take a Closer Look</a>
+    </div>
+  </div>
+</div>
+<div class="col bm-2">
+  <div class="card h-100">
+    <img src="./images/github.jpg" class="card-img-top" alt="GitHub">
+    <div class="card-body">
+      <h5 class="card-title">GitHub</h5>
+      <p class="card-text">Take a look at my other projects on GitHub</p>
+      <a href="https://github.com/harrisonkong" target="_blank" class="btn btn-primary">Go to my GitHub</a>
+    </div>
+  </div>
+</div>
+</div>
+<div class="applet-div">
+  <p class="section-heading">Take a Break and be Poetic!</p>
+
+  <form id="query-form">
+      <div>
+          <label for="plant">Enter the name of a plant:</label> <input class="textfield" id="plant" type="text" name="plant" placeholder="e.g. orchid">
+          </div>
+          <div>
+          <label for="animal">Enter the name of an animal:</label> <input class="textfield" id="animal" type="text" name="animal" placeholder="e.g. dolphin">
+          </div>     
+          <div class="button">
+          <div class="poetry-title" id="poetry-title"></div>
+          <div class="poetry-body" id="poetry-body"></div>
+
+          <input class="btn btn-warning" type="button" value="Reset" id="resetButton" onclick="this.form.reset();resetResults()">
+          <input class="btn btn-primary" type="submit" value="Make / Remake" id="makeButton">
+
+          <div class="poetry-form-message" id="form-message"></div>
+      </div>
+  </form>
+  <p data-toggle="tooltip" data-placement="bottom" title="" onclick="javascript:toolTipReset()" data-original-title="These tags tell you what technologies I use">
+    Powered by :
+    <span class="keyword-magnet">JavaScript</span>
+    <span class="keyword-magnet">JQuery</span>
+    <span class="keyword-magnet">Bootstrap</span>
+</p>
+
+</div>
+
+<hr>
+
+<p class="section-heading">Skill Summary</p>
+
+<p data-toggle="tooltip" data-placement="bottom" title="" onclick="javascript:toolTipReset()" data-original-title="These tags tell you what technologies I use">
+    <span class="keyword-magnet">HTML</span>
+    <span class="keyword-magnet">CSS</span>
+    <span class="keyword-magnet">JavaScript</span>
+    <span class="keyword-magnet">Node.js</span>
+    <span class="keyword-magnet">Java</span>
+    <span class="keyword-magnet">Kotlin</span>
+    <span class="keyword-magnet">Swift</span>
+</p>
+
+<ul>
+    <li>Full stack web developer</li>
+    <li>Mobile application developer for iOS and Android</li>
+    <li>Graphic designer with Adobe Suite</li>
+</ul>
+<hr>
+<p class="section-heading">Career Highlights</p>
+<p class="section-subheading">City and County of San Francisco</p>
+<p class="section-small-heading">Software Developer, System Analyst</p>
+<ul>
+    <li>Develop emergency mobile and web applications</li>
+    <li>Analyse historical data on natural disasters</li>
+</ul>
+
+<p class="section-subheading">Les �toiles Du Temps Satellite HQ</p>
+<p class="section-small-heading">Technology Intern</p>
+<ul>
+    <li>Developed firmware for communication satellites</li>
+    <li>Assured software performance and data integrity</li>
+</ul>
+<hr>
+<p class="section-heading">Contact</p>
+
+<p>Email: <a href="mailto:mariam@abcdefg.com" data-toggle="tooltip" data-placement="bottom" title="" onclick="javascript:toolTipReset()" data-original-title="Tap here to email me">mariam@abcdefg.com</a></p>
+<p>LinkedIn: <a href="https://linkedin.com/in/harrison-kong-16994545" target="_blank" data-toggle="tooltip" data-placement="bottom" title="" onclick="javascript:toolTipReset()" "="" data-original-title="Tap here to visit my LinkedIn page">Mariam H. DuPont</a></p>
+</body>
+<img class="hero" src="./images/footer_banner.jpg" alt="banner">
+<footer>
+    <p class="copyright-text">© Copyright 2023 Mariam H. Dupont </p>
+</footer>
+<script src="./js/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<!-- Bootstrap Scripts -->
+<script src="./js/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="./js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<!-- Our codes -->
+<script src="js/main.js"></script>
